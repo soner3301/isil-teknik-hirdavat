@@ -229,3 +229,12 @@ footer {
     background:#f5b400;
     color:#111;
 }
+.whatsapp,
+.call{
+    transition:.3s;
+}
+
+.whatsapp:hover,
+.call:hover{
+    transform:translateY(-3px);
+}
