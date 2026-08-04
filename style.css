@@ -150,3 +150,29 @@ footer {
     margin-bottom: 30px;
     font-size: 18px;
 }
+.products {
+    padding: 50px 20px;
+    text-align: center;
+    background: #151515;
+}
+
+.products h2 {
+    font-size: 32px;
+    color: #f5b400;
+    margin-bottom: 30px;
+}
+
+.card a {
+    display: inline-block;
+    margin-top: 15px;
+    background: #f5b400;
+    color: #111;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.card a:hover {
+    opacity: 0.8;
+}
