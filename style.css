@@ -194,3 +194,7 @@ footer {
     font-weight:bold;
     font-size:14px;
 }
+.logo img{
+    height:70px;
+    width:auto;
+}
