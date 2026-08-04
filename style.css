@@ -12,7 +12,11 @@
 html{
     scroll-behavior:smooth;
 }
-
+<a href="https://wa.me/905387785341"
+class="floating-whatsapp"
+target="_blank">
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+</a>
 body{
     background:#111;
     color:#fff;
@@ -99,9 +103,11 @@ nav a:hover{
 }
 
 .hero h1{
-    font-size:58px;
+    font-size:60px;
     color:#d4a017;
+    text-shadow:0 0 20px rgba(212,160,23,.5);
     margin-bottom:15px;
+}
 }
 
 .hero h2{
@@ -177,11 +183,17 @@ nav a:hover{
 }
 
 .product-card{
-    background:#1d1d1d;
-    border:1px solid #333;
+    background:#1b1b1b;
+    border:1px solid rgba(212,160,23,.25);
     border-radius:18px;
     overflow:hidden;
-    transition:.3s;
+    transition:.4s;
+}
+
+.product-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 15px 35px rgba(212,160,23,.25);
+}
 }
 
 .product-card:hover{
@@ -375,4 +387,28 @@ transition:.3s;
 
 transform:scale(1.15);
 
+}
+.floating-whatsapp{
+position:fixed;
+right:20px;
+bottom:20px;
+width:65px;
+height:65px;
+background:#25D366;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+box-shadow:0 10px 25px rgba(0,0,0,.35);
+z-index:9999;
+transition:.3s;
+}
+
+.floating-whatsapp img{
+width:36px;
+height:36px;
+}
+
+.floating-whatsapp:hover{
+transform:scale(1.1);
 }
