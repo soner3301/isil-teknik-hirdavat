@@ -186,3 +186,11 @@ footer {
     color: #f5b400;
     margin-bottom: 30px;
 }
+.topbar{
+    background:#f5b400;
+    color:#111;
+    text-align:center;
+    padding:10px;
+    font-weight:bold;
+    font-size:14px;
+}
