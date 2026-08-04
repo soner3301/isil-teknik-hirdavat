@@ -198,3 +198,30 @@ footer {
     height:150px;
     width:auto;
 }
+.hero-logo{
+    width:180px;
+    margin-bottom:20px;
+}
+
+.hero-buttons{
+    display:flex;
+    gap:15px;
+    justify-content:center;
+    flex-wrap:wrap;
+    margin-top:25px;
+}
+
+.call{
+    background:#222;
+    color:white;
+    padding:15px 30px;
+    border-radius:30px;
+    text-decoration:none;
+    border:2px solid #f5b400;
+    font-weight:bold;
+}
+
+.call:hover{
+    background:#f5b400;
+    color:#111;
+}
