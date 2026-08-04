@@ -412,3 +412,31 @@ height:36px;
 .floating-whatsapp:hover{
 transform:scale(1.1);
 }
+.discount{
+    position:absolute;
+    top:15px;
+    left:15px;
+    background:#e53935;
+    color:#fff;
+    padding:6px 12px;
+    border-radius:20px;
+    font-size:12px;
+    font-weight:bold;
+}
+
+.product-card{
+    position:relative;
+}
+
+.old-price{
+    text-decoration:line-through;
+    color:#888;
+    padding:0 20px;
+}
+
+.new-price{
+    color:#25D366;
+    font-size:28px;
+    font-weight:bold;
+    padding:0 20px 15px;
+}
