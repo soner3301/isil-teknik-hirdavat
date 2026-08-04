@@ -1,40 +1,77 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
+/* ==========================
+   IŞIL TEKNİK HIRDAVAT V2
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
-body {
-    background: #111;
-    color: white;
+html{
+    scroll-behavior:smooth;
 }
 
-header {
-    background: #1c1c1c;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+body{
+    background:#111;
+    color:#fff;
+    line-height:1.6;
 }
 
-.logo {
-    font-size: 22px;
-    font-weight: bold;
-    color: #f5b400;
+/* ÜST BİLGİ ŞERİDİ */
+
+.topbar{
+    background:#d4a017;
+    color:#111;
+    text-align:center;
+    padding:10px;
+    font-weight:bold;
+    font-size:14px;
 }
 
-nav a {
-    color: white;
-    text-decoration: none;
-    margin-left: 15px;
+/* HEADER */
+
+header{
+    position:sticky;
+    top:0;
+    z-index:999;
+    background:#181818;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 40px;
+    border-bottom:1px solid #333;
 }
+
+.logo img{
+    height:90px;
+}
+
+nav{
+    display:flex;
+    gap:30px;
+}
+
+nav a{
+    color:#fff;
+    text-decoration:none;
+    font-weight:bold;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#d4a017;
+}
+
+/* HERO */
 
 .hero{
-    min-height:600px;
+    position:relative;
+    min-height:90vh;
     background:
         linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
-        url("./hero.jpg");
+        url("hero.jpg");
     background-size:cover;
     background-position:center;
     display:flex;
@@ -43,198 +80,234 @@ nav a {
     text-align:center;
     padding:40px 20px;
 }
+
+.hero-content{
+    position:relative;
+    z-index:2;
+    max-width:900px;
 }
 
-.hero h1 {
-    font-size: 42px;
-    margin-bottom: 20px;
-}
-
-.hero p {
-    font-size: 20px;
-    margin-bottom: 30px;
-}
-
-.whatsapp {
-    background: #25D366;
-    color: white;
-    padding: 15px 30px;
-    border-radius: 30px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.categories {
-    padding: 40px 20px;
-    text-align: center;
-}
-
-.categories h2 {
-    margin-bottom: 30px;
-}
-
-.cards {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.card {
-    background: #222;
-    padding: 25px;
-    width: 280px;
-    border-radius: 15px;
-    border: 1px solid #444;
-}
-
-.card h3 {
-    color: #f5b400;
-    margin-bottom: 15px;
-}
-
-footer {
-    text-align: center;
-    padding: 20px;
-    background: #000;
-}
-.logo {
-    display: flex;
-    flex-direction: column;
-    line-height: 1;
-    font-weight: bold;
-    letter-spacing: 1px;
-}
-
-.logo span {
-    font-size: 26px;
-    color: #f5b400;
-}
-
-.logo small {
-    font-size: 14px;
-    color: white;
-    margin-top: 5px;
-    letter-spacing: 3px;
-}
-.hero {
-    min-height: 520px;
-    background: linear-gradient(135deg, #111, #292929);
-    text-align: center;
-    padding: 80px 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.hero h1 {
-    font-size: 45px;
-    color: #f5b400;
-    margin-bottom: 15px;
-}
-
-.hero h2 {
-    font-size: 28px;
-    margin-bottom: 20px;
-}
-
-.hero p {
-    font-size: 18px;
-    color: #ddd;
-    margin-bottom: 25px;
-}
-
-.campaign {
-    background: #f5b400;
-    color: #111;
-    padding: 15px 30px;
-    border-radius: 10px;
-    font-weight: bold;
-    margin-bottom: 30px;
-    font-size: 18px;
-}
-.products {
-    padding: 50px 20px;
-    text-align: center;
-    background: #151515;
-}
-
-.products h2 {
-    font-size: 32px;
-    color: #f5b400;
-    margin-bottom: 30px;
-}
-
-.card a {
-    display: inline-block;
-    margin-top: 15px;
-    background: #f5b400;
-    color: #111;
-    padding: 10px 20px;
-    border-radius: 20px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.card a:hover {
-    opacity: 0.8;
-}
-.features {
-    padding: 50px 20px;
-    text-align: center;
-    background: #111;
-}
-
-.features h2 {
-    color: #f5b400;
-    margin-bottom: 30px;
-}
-.topbar{
-    background:#f5b400;
-    color:#111;
-    text-align:center;
-    padding:10px;
-    font-weight:bold;
-    font-size:14px;
-}
-.logo img{
-    height:150px;
-    width:auto;
-}
 .hero-logo{
     width:180px;
+    margin-bottom:25px;
+}
+
+.hero h1{
+    font-size:58px;
+    color:#d4a017;
+    margin-bottom:15px;
+}
+
+.hero h2{
+    font-size:30px;
     margin-bottom:20px;
 }
 
+.hero p{
+    color:#ddd;
+    font-size:20px;
+    margin-bottom:35px;
+}
+/* BUTONLAR */
+
 .hero-buttons{
     display:flex;
-    gap:15px;
     justify-content:center;
+    gap:20px;
     flex-wrap:wrap;
-    margin-top:25px;
 }
 
-.call{
-    background:#222;
-    color:white;
-    padding:15px 30px;
-    border-radius:30px;
-    text-decoration:none;
-    border:2px solid #f5b400;
-    font-weight:bold;
-}
-
-.call:hover{
-    background:#f5b400;
-    color:#111;
-}
 .whatsapp,
-.call{
+.call,
+.btn{
+    display:inline-block;
+    padding:15px 30px;
+    border-radius:50px;
+    text-decoration:none;
+    font-weight:bold;
     transition:.3s;
 }
 
+.whatsapp{
+    background:#25D366;
+    color:#fff;
+}
+
+.call{
+    background:#d4a017;
+    color:#111;
+}
+
+.btn{
+    background:#d4a017;
+    color:#111;
+    margin-top:15px;
+}
+
 .whatsapp:hover,
-.call:hover{
-    transform:translateY(-3px);
+.call:hover,
+.btn:hover{
+    transform:translateY(-5px);
+    box-shadow:0 10px 25px rgba(0,0,0,.4);
+}
+
+/* ÜRÜNLER */
+
+.products{
+    padding:80px 30px;
+}
+
+.products h2{
+    text-align:center;
+    color:#d4a017;
+    font-size:38px;
+    margin-bottom:40px;
+}
+
+.product-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.product-card{
+    background:#1d1d1d;
+    border:1px solid #333;
+    border-radius:18px;
+    overflow:hidden;
+    transition:.3s;
+}
+
+.product-card:hover{
+    transform:translateY(-8px);
+    border-color:#d4a017;
+}
+
+.product-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.product-card h3{
+    color:#d4a017;
+    padding:20px 20px 10px;
+}
+
+.product-card p{
+    padding:0 20px;
+    color:#ccc;
+}
+
+.product-card .btn{
+    margin:20px;
+}
+/* KAMPANYALAR */
+
+.campaigns{
+    background:#181818;
+    text-align:center;
+    padding:80px 20px;
+}
+
+.campaigns h2{
+    color:#d4a017;
+    font-size:38px;
+    margin-bottom:20px;
+}
+
+.campaigns p{
+    color:#ddd;
+    font-size:18px;
+}
+
+/* HAKKIMIZDA */
+
+.about{
+    padding:80px 20px;
+    max-width:1000px;
+    margin:auto;
+    text-align:center;
+}
+
+.about h2{
+    color:#d4a017;
+    font-size:38px;
+    margin-bottom:20px;
+}
+
+.about p{
+    color:#ccc;
+    font-size:18px;
+}
+
+/* İLETİŞİM */
+
+.contact{
+    background:#181818;
+    text-align:center;
+    padding:80px 20px;
+}
+
+.contact h2{
+    color:#d4a017;
+    font-size:38px;
+    margin-bottom:20px;
+}
+
+.contact p{
+    font-size:20px;
+    margin:10px 0;
+}
+
+/* FOOTER */
+
+footer{
+    background:#0d0d0d;
+    text-align:center;
+    padding:25px;
+    border-top:1px solid #333;
+    color:#999;
+}
+
+/* MOBİL UYUMLULUK */
+
+@media (max-width:768px){
+
+header{
+    flex-direction:column;
+    padding:20px;
+}
+
+nav{
+    margin-top:15px;
+    gap:15px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.hero h1{
+    font-size:36px;
+}
+
+.hero h2{
+    font-size:22px;
+}
+
+.hero p{
+    font-size:16px;
+}
+
+.hero-logo{
+    width:120px;
+}
+
+.logo img{
+    height:70px;
+}
+
+.topbar{
+    font-size:12px;
+}
+
 }
