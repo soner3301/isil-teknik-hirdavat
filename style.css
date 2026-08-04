@@ -176,3 +176,13 @@ footer {
 .card a:hover {
     opacity: 0.8;
 }
+.features {
+    padding: 50px 20px;
+    text-align: center;
+    background: #111;
+}
+
+.features h2 {
+    color: #f5b400;
+    margin-bottom: 30px;
+}
