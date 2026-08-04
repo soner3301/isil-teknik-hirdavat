@@ -238,6 +238,3 @@ footer {
 .call:hover{
     transform:translateY(-3px);
 }
-body{
-    background:red !important;
-}
