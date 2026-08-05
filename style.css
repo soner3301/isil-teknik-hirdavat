@@ -413,3 +413,48 @@ transform:translateY(0);
 }
 
 }
+/* ===== MARKALAR ===== */
+
+.brands{
+    padding:80px 0;
+    background:#111;
+    overflow:hidden;
+}
+
+.brands h2{
+    text-align:center;
+    color:#d4af37;
+    font-size:40px;
+    margin-bottom:40px;
+}
+
+.brand-slider{
+    overflow:hidden;
+    white-space:nowrap;
+}
+
+.brand-track{
+    display:inline-block;
+    animation:brands 20s linear infinite;
+}
+
+.brand-track span{
+    display:inline-block;
+    margin:0 40px;
+    font-size:34px;
+    color:#fff;
+    font-weight:700;
+    opacity:.85;
+}
+
+@keyframes brands{
+
+0%{
+transform:translateX(0);
+}
+
+100%{
+transform:translateX(-50%);
+}
+
+}
