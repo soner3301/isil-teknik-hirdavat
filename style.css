@@ -77,61 +77,56 @@ nav a:hover{
 /* HERO */
 
 .hero{
-background:#111;
-padding:80px 8%;
-display:flex;
-align-items:center;
-justify-content:center;
-min-height:700px;
+    position: relative;
+    min-height: 100vh;
+    background: linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.65)),
+                url("hero.jpg") center center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    color: #fff;
 }
 
 .hero-content{
-display:flex;
-align-items:center;
-justify-content:space-between;
-gap:60px;
-width:100%;
-max-width:1400px;
-flex-wrap:wrap;
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
 }
 
 .hero-left{
-flex:1;
-min-width:320px;
+    flex: 1;
+}
+
+.hero-left h1{
+    font-size: 52px;
+    color: #d4af37;
+    margin-bottom: 20px;
+}
+
+.hero-left h2{
+    font-size: 42px;
+    color: #fff;
+    margin: 15px 0;
+}
+
+.hero-left p{
+    font-size: 20px;
+    line-height: 1.7;
 }
 
 .hero-right{
-flex:1;
-text-align:center;
+    flex: 1;
+    text-align: center;
 }
 
 .hero-right img{
-width:100%;
-max-width:650px;
-filter:drop-shadow(0 20px 40px rgba(0,0,0,.5));
-}
-
-.hero h1{
-font-size:54px;
-color:#d4a017;
-margin-bottom:20px;
-}
-
-.hero h2{
-font-size:60px;
-color:#25D366;
-margin:15px 0;
-}
-
-.kampanya{
-color:#ff4444;
-font-size:24px;
-font-weight:bold;
-}
-
-.hero p{
-font-size:20px;
-color:#ddd;
+    max-width: 500px;
+    width: 100%;
+    filter: drop-shadow(0 0 25px rgba(0,0,0,.7));
 }
 
 .whatsapp,
