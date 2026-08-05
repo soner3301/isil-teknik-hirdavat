@@ -65,3 +65,26 @@ card.style.transition=".3s";
 // Console mesajı 😊
 
 console.log("Işıl Teknik Hırdavat Web Sitesi Hazır 🚀");
+/* ===== ÜRÜN ARAMA ===== */
+
+const searchInput=document.getElementById("searchInput");
+
+if(searchInput){
+
+searchInput.addEventListener("keyup",function(){
+
+let filter=this.value.toLowerCase();
+
+document.querySelectorAll(".product-card").forEach(card=>{
+
+let text=card.innerText.toLowerCase();
+
+card.style.display=text.includes(filter)
+? "block"
+: "none";
+
+});
+
+});
+
+}
