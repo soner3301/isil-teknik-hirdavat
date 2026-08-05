@@ -604,3 +604,33 @@ color:#ccc;
 .btn-gold{
     background:#d4a017;
 }
+.stats{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+gap:20px;
+padding:70px 8%;
+background:#181818;
+}
+
+.stat-box{
+background:#222;
+padding:30px;
+text-align:center;
+border-radius:15px;
+transition:.3s;
+}
+
+.stat-box:hover{
+transform:translateY(-8px);
+border:1px solid #d4af37;
+}
+
+.stat-box h2{
+font-size:40px;
+color:#d4af37;
+margin-bottom:10px;
+}
+
+.stat-box p{
+color:#ddd;
+}
