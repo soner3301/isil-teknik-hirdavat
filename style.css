@@ -458,3 +458,28 @@ transform:translateX(-50%);
 }
 
 }
+/* ===== ÜRÜN ARAMA ===== */
+
+.search-box{
+    display:flex;
+    justify-content:center;
+    margin-bottom:35px;
+}
+
+.search-box input{
+    width:100%;
+    max-width:500px;
+    padding:16px 20px;
+    border:none;
+    border-radius:12px;
+    background:#222;
+    color:#fff;
+    font-size:17px;
+    outline:none;
+    border:2px solid transparent;
+    transition:.3s;
+}
+
+.search-box input:focus{
+    border-color:#d4af37;
+}
