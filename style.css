@@ -634,3 +634,35 @@ margin-bottom:10px;
 .stat-box p{
 color:#ddd;
 }
+.services{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+    padding:60px 8%;
+    background:#111;
+}
+
+.service-box{
+    background:#1d1d1d;
+    border-radius:18px;
+    padding:30px 20px;
+    text-align:center;
+    transition:.3s;
+    border:1px solid transparent;
+}
+
+.service-box:hover{
+    transform:translateY(-8px);
+    border-color:#d4af37;
+    box-shadow:0 10px 30px rgba(212,175,55,.25);
+}
+
+.service-box h3{
+    color:#d4af37;
+    margin:15px 0 10px;
+}
+
+.service-box p{
+    color:#ddd;
+    font-size:15px;
+}
