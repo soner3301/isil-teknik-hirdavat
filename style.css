@@ -724,3 +724,28 @@ padding:50px 0;
 }
 
 }
+@media (max-width:768px){
+
+.hero{
+    min-height:auto;
+    padding:40px 15px;
+}
+
+.hero-content{
+    display:flex;
+    flex-direction:column;
+    gap:25px;
+}
+
+.hero-left,
+.hero-right,
+.hero-stats{
+    width:100%;
+}
+
+.hero-right img{
+    width:280px;
+    max-width:90%;
+}
+
+}
