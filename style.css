@@ -360,3 +360,56 @@ nav a:hover{
 
 .contact-box p{
     margin:15px 
+   /* ===== ANİMASYON ===== */
+
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(50px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+.product-card{
+    animation:fadeUp .8s ease forwards;
+}
+
+.product-card:nth-child(2){
+    animation-delay:.2s;
+}
+
+.product-card:nth-child(3){
+    animation-delay:.4s;
+}
+
+.advantage{
+    animation:fadeUp .8s ease forwards;
+}
+
+.about-card{
+    animation:fadeUp .8s ease forwards;
+}
+
+.hero-image img{
+    animation:float 4s ease-in-out infinite;
+}
+
+@keyframes float{
+
+0%{
+transform:translateY(0);
+}
+
+50%{
+transform:translateY(-12px);
+}
+
+100%{
+transform:translateY(0);
+}
+
+}
