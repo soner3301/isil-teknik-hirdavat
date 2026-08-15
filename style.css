@@ -547,3 +547,15 @@ transform:translateX(-50%);
 .search-box input:focus{
     border-color:#d4af37;
 }
+@media(max-width:768px){
+
+    .section-heading h2{
+        font-size:32px;
+    }
+
+    .section-heading p{
+        font-size:14px;
+        padding:0 15px;
+    }
+
+}
