@@ -559,3 +559,209 @@ transform:translateX(-50%);
     }
 
 }
+/* =========================================
+   V6.1 PROFESYONEL SON DOKUNUŞLAR
+========================================= */
+
+/* ÜRÜN ARAMA */
+
+.products input[type="text"],
+.products input[type="search"]{
+    display:block;
+    width:100%;
+    max-width:500px;
+    margin:0 auto 25px;
+    padding:14px 20px;
+    background:#1c1c1c;
+    color:#fff;
+    border:1px solid #333;
+    border-radius:30px;
+    outline:none;
+    font-family:Poppins,Arial,sans-serif;
+    font-size:14px;
+    transition:.3s;
+}
+
+.products input[type="text"]:focus,
+.products input[type="search"]:focus{
+    border-color:#d4af37;
+    box-shadow:0 0 15px rgba(212,175,55,.15);
+}
+
+.products input::placeholder{
+    color:#888;
+}
+
+/* MARKALAR */
+
+.brands{
+    background:#181818;
+    padding:45px 20px;
+    text-align:center;
+    border-top:1px solid #252525;
+    border-bottom:1px solid #252525;
+}
+
+.brands h2{
+    color:#d4af37;
+    font-size:28px;
+    margin-bottom:20px;
+}
+
+.brands-list{
+    max-width:1000px;
+    margin:auto;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:12px;
+}
+
+.brand-item{
+    background:#222;
+    color:#ddd;
+    border:1px solid #333;
+    padding:10px 18px;
+    border-radius:30px;
+    font-size:13px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.brand-item:hover{
+    color:#111;
+    background:#d4af37;
+    border-color:#d4af37;
+    transform:translateY(-3px);
+}
+
+/* FOOTER */
+
+footer{
+    padding:50px 20px 25px;
+    background:#0d0d0d;
+    text-align:center;
+}
+
+.footer-content{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:12px;
+}
+
+.footer-content img{
+    width:130px;
+    height:130px;
+    object-fit:contain;
+    margin-bottom:5px;
+}
+
+.footer-content p{
+    color:#888;
+    font-size:13px;
+    margin:0;
+}
+
+/* WHATSAPP */
+
+.floating-whatsapp{
+    width:60px;
+    height:60px;
+    right:18px;
+    bottom:18px;
+}
+
+/* MOBİL */
+
+@media(max-width:768px){
+
+    .products{
+        padding:55px 15px;
+    }
+
+    .section-heading{
+        margin-bottom:30px;
+    }
+
+    .section-heading h2{
+        font-size:30px;
+    }
+
+    .section-heading p{
+        font-size:13px;
+        line-height:1.6;
+    }
+
+    .products input[type="text"],
+    .products input[type="search"]{
+        max-width:100%;
+        margin-bottom:25px;
+    }
+
+    .product-grid{
+        grid-template-columns:repeat(2, minmax(0,1fr));
+        gap:12px;
+    }
+
+    .product-card{
+        border-radius:14px;
+    }
+
+    .product-card img{
+        height:180px;
+    }
+
+    .product-card h3{
+        font-size:14px;
+        line-height:1.5;
+        min-height:65px;
+        padding:14px 12px 5px;
+    }
+
+    .product-card .old-price{
+        font-size:12px;
+        padding:0 12px;
+    }
+
+    .product-card .new-price{
+        font-size:22px;
+        padding:5px 12px 12px;
+    }
+
+    .product-card .btn{
+        margin:10px 12px 12px;
+        padding:11px 5px;
+        font-size:11px;
+    }
+
+    .discount{
+        top:8px;
+        left:8px;
+        padding:5px 8px;
+        font-size:10px;
+    }
+
+    .brands{
+        padding:35px 15px;
+    }
+
+    .brands h2{
+        font-size:24px;
+    }
+
+    .brands-list{
+        gap:8px;
+    }
+
+    .brand-item{
+        padding:8px 12px;
+        font-size:11px;
+    }
+
+    .footer-content img{
+        width:110px;
+        height:110px;
+    }
+}
