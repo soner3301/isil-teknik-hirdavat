@@ -1274,3 +1274,115 @@ footer{
     }
 
 }
+/* =========================================
+   ALT BÖLÜMLER - TELEFON TAM GENİŞLİK FIX
+   ========================================= */
+
+@media (max-width: 768px) {
+
+    /* HAKKIMIZDA */
+    #hakkimizda.about {
+        width: 100% !important;
+        max-width: none !important;
+        margin: 0 !important;
+        padding: 60px 20px !important;
+        display: block !important;
+        float: none !important;
+        box-sizing: border-box !important;
+    }
+
+    #hakkimizda.about > * {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        box-sizing: border-box !important;
+    }
+
+    #hakkimizda .about-boxes {
+        width: 100% !important;
+        max-width: 100% !important;
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        gap: 18px !important;
+        margin-top: 30px !important;
+    }
+
+    #hakkimizda .about-boxes .about-box {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 !important;
+    }
+
+
+    /* İLETİŞİM */
+    #iletisim {
+        width: 100% !important;
+        max-width: none !important;
+        margin: 0 !important;
+        padding: 60px 20px !important;
+        display: block !important;
+        float: none !important;
+        box-sizing: border-box !important;
+    }
+
+    #iletisim > * {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        box-sizing: border-box !important;
+    }
+
+    #iletisim .contact-box {
+        width: 100% !important;
+        max-width: 500px !important;
+        margin: 0 auto !important;
+    }
+
+
+    /* FOOTER */
+    footer {
+        width: 100% !important;
+        max-width: none !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+        float: none !important;
+        box-sizing: border-box !important;
+    }
+
+    footer > * {
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
+    footer .footer-main {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 50px 20px !important;
+        margin: 0 !important;
+
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        gap: 40px !important;
+
+        box-sizing: border-box !important;
+    }
+
+    footer .footer-main > * {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 auto !important;
+        box-sizing: border-box !important;
+    }
+
+    footer .footer-bottom {
+        width: 100% !important;
+        max-width: 100% !important;
+        text-align: center !important;
+        box-sizing: border-box !important;
+    }
+
+}
